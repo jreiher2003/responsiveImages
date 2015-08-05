@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',
+          engine: 'gm',
           sizes: [{
             name: 'small',
             width: '30%',
