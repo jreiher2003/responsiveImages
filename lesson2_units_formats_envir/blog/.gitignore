@@ -9,6 +9,8 @@
 *.kpf
 *.db
 venv
-
+Project-Part-1-Start
+../Project-Part-1-Start/
+ ../responsive_grunt_pratice
 # Don't store secret keys in version control
 secret_keys.py
