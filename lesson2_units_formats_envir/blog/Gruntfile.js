@@ -5,8 +5,8 @@ module.exports = function(grunt) {
 				options: {
 					sizes: [{
 						// name: 'resized',
-						width: 1600,
-						quality: 80
+						width: 800,
+						quality: 20
 					}]
 				},
 				files: [{
