@@ -20,8 +20,7 @@ module.exports = function(grunt) {
 						quality: 60
 					}]
 
-				}
-				,
+				},
 				files: [{
 					expand: true,
 					src: ['*.{gif,jpg,png}'],
