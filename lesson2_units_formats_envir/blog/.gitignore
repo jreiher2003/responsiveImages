@@ -9,6 +9,7 @@
 *.kpf
 *.db
 venv
+node_modules
 Project-Part-1-Start
 ../Project-Part-1-Start/
  ../responsive_grunt_pratice
