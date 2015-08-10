@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>Icons</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+
+	<style>
+	@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+	[class*="zocial-"]:before {
+		display: inline-block;
+		font-family: 'zocial', sans-serif;
+		text-shadow: 3px 3px 3px #aaa;
+		width: 20vw;
+	}
+	body {
+		font-family: 'Roboto Condensed';
+		margin: 20vh 0;
+	}
+	li {
+		font-size: 10vw;
+		list-style: none;
+		margin: vw  0;
+		padding-left: 100px;
+	}
+
+	.ying:before {
+		content: "☯";
+		font-size: 3em;
+		/*background-color: red;*/
+		color: blue;
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+	.radioactive:before {
+		content: "☢";
+		font-size: 3em;
+	}
+	</style>
+</head>
+<body>
+	<li class="zocial-twitter">Twitter</li>
+	<li class="zocial-flickr">Flickr</li>
+	<li class="zocial-lastfm">Last.fm</li>
+	<li class="zocial-reddit">Reddit</li>
+	<br>
+	<div class="ying"></div>
+	<div class="radioactive"></div>
+</body>
+</html>
