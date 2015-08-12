@@ -1,5 +1,12 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 body {
-/* 	background: blue; */
+/* 	font-family: sans-serif; */
+}
+
+p {
+	font-size: 1.2em;
+	font-weight: 100;
+	line-height: normal;
 }
 
 article {
@@ -13,4 +20,19 @@ h1 {
 img, figure {
 	max-width: 100%;
 
+}
+span {
+	font-size: 1.5em;
+	margin-bottom:0;
+}
+
+footer {
+
+}
+
+[class*='zocial-']:before {
+	display: inline-block;
+	font-family: "zocial", sans-serif;
+	width: 20vw;
+	text-shadow: 1px 1px 1px #666;
 }
