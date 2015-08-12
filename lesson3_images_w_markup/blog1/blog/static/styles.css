@@ -1,6 +1,6 @@
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 body {
-/* 	font-family: sans-serif; */
+
 }
 
 p {
@@ -11,6 +11,7 @@ p {
 
 article {
 	width: 50em;
+	/*margin: auto auto;*/
 }
 
 h1 {
@@ -27,12 +28,38 @@ span {
 }
 
 footer {
+	margin: 10vh 0;
+	/*text-align: center;*/
 
+}
+hr.divide {
+	border-top: 1px dashed #8c8b8b;
+}
+hr.divide:after {
+	content: '\002702'; 
+    display: inline; 
+    position: relative; 
+    top: -12px; 
+    left: 40px; 
+    
+	padding: 0 3px; 
+    
+	background: #f0f0f0; 
+    
+	color: #8c8b8b; 
+    
+	font-size: 18px; 
 }
 
 [class*='zocial-']:before {
 	display: inline-block;
 	font-family: "zocial", sans-serif;
-	width: 20vw;
-	text-shadow: 1px 1px 1px #666;
+	width: 10vw;
+	text-shadow: 3px 3px 3px #666;
+	margin-right: 5vh;
+}
+
+li {
+	font-size: 2em;
+	list-style: none;
 }
