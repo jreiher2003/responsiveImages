@@ -1,0 +1,16 @@
+body {
+/* 	background: blue; */
+}
+
+article {
+	width: 50em;
+}
+
+h1 {
+
+}
+
+img, figure {
+	max-width: 100%;
+
+}
