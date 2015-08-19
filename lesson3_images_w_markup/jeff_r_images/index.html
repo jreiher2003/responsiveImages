@@ -6,57 +6,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="./images/jwblack21.png">
 	<style>
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100vw;
+		}
 		img {
-			width: 33.33vw;
 			transition: .5s;
+			width: 100vw;
 		}
-		@media screen and (max-width: 500px) {
-			img {
-				width: 75vw;
-			}
+		.profile img {
+			border-radius: 50%;
 		}
-		/*.white img {
-			width: 16px;
-		}
-		.yo {
-			font-family: "Lobster", cursive;
-			font-size: 20px;
-			position: absolute;
-			transform: translate(20px, 120px);
-			width: 30vw;
-			color: white;
-			text-align: center;
-		}
-		.text {
-			position: absolute;
-			width: 100%;
-		}
-		title {
-			color: white;
-		}
-		div.sun img{
-			width: 100vmin;
-		}*/
+		
 	</style>
 
 </head>
-<body>
-	<img src="images/jeffreihercom.png" srcset="images/crop_black.png 500w, images/jwblack212.png 1024w"  alt="jwrblack" />
-	<!-- sizes="(max-width: 400px) 33.33vw, 100vw" -->
-	<!-- <img src="images/jeffreihercom2.png" alt="jeffreiher.com">
-	<img src="images/jeffreihercom.svg" alt="jeffreiher.com">
-	<div class="white"><img src="images/jwblack21.png" alt="JWR"></div>
-	<img src="images/jwblack212.png" alt="JWRBlack">
-	<img src="images/jwblack_rr.png" alt="jwrb-r">
-	<img src="images/crop_black.png" alt="jwrblack_crop">
-	<img src="images/crop_black.svg" alt="crop_black">
-	<img src="images/jwblack21.png" alt="JWR">
-	<img src="images/DSAC150.svg" alt="DSAC">
-	<div class="sun"><img src="images/flo_sun.jpg" alt="Sun"></div>
+<body class="container">
+	<div class="black_crop">
+		<img src="images_dest/crop_black-large.svg" srcset="images_dest/crop_black-small.svg 400w, images_dest/crop_black-medium.svg 800w, images_dest/crop_black-large.svg 1200w" alt="JWR-crop"/>
+	</div>
 
-	<br>
-	<div class="text"><img src="images/jwblack212.png" alt="JWRBlack"></div>
-	<div class="yo">Beware of bears</div> -->
+	<div class="dsac">
+		<img src="images_dest/DSAC-large.svg" srcset="images_dest/DSAC-small.svg 400w, images_dest/DSAC-medium.svg 800w, images_dest/DSAC-large.svg 1200w" alt="DSAC-logo"/>
+	</div>
+
+	<div class="jeffreiher_crop">
+		<img src="images_dest/jeffreihercom2-large.svg" srcset="images_dest/jeffreihercom2-small.svg 400w, images_dest/jeffreihercom2-medium.svg 800w, images_dest/jeffreihercom2-large.svg 1200w" alt="JeffReiher.com_crop"/>
+	</div>
+
+	<div class="jeffreihercom">
+		<img src="images_dest/jeffreihercom-large.svg" srcset="images_dest/jeffreihercom-small.svg 400w, images_dest/jeffreihercom-medium.svg 800w, images_dest/jeffreihercom-large.svg 1200w" alt="jeffreiher.com"/>
+	</div>
+
+	<div class="jwrwhite">
+		<img src="images_dest/jwblack21-large.svg" srcset="images_dest/jwblack21-small.svg 400w, images_dest/jwblack21-medium.svg 800w, images_dest/jwblack21-large.svg 1200w" alt="JWR-white"/>
+	</div>
+
+	<div class="jwrblack">
+		<img src="images_dest/jwblack212-large.svg" srcset="images_dest/jwblack212-small.svg 400w, images_dest/jwblack212-medium.svg 800w, images_dest/jwblack212-large.svg 1200w" alt="JWR-black"/>
+	</div>
+
+	<div class="flo_sun">
+		<img src="images_dest/flo_sun-large.jpg" srcset="images_dest/flo_sun-small.jpg 400w, images_dest/flo_sun-medium.jpg 800w, images_dest/flo_sun-large.jpg 1200w" alt="florida sun"/>
+	</div>
+
+	<div class="profile">
+		<img src="images_dest/jeff-medium1.jpg" srcset="images_dest/jeff-small.jpg 400w, images_dest/jeff-medium.jpg 800w, images_dest/jeff-large.jpg 1200w" alt="Jeff's profile pic"/>
+	</div>
+
+	
+
 
 </body>
 
