@@ -1,0 +1,19 @@
+{
+  "name": "jeff_r_images",
+  "version": "1.0.0",
+  "description": "Practice images",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Jeff Reiher",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-responsive-images": "^0.1.6"
+  }
+}
