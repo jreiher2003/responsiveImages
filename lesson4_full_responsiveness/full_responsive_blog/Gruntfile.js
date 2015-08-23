@@ -16,8 +16,28 @@ module.exports = function(grunt) {
           sizes: [{
             /* Change these */
             width: 1600,
-            suffix: '_large_2x',
+            suffix: '_large',
             quality: 30
+          },{
+            width: 1600,
+            suffix: '_HD_large',
+            quality: 75
+          },{
+            width: 800,
+            suffix: '_medium',
+            quality: 30
+          },{
+            width: 800,
+            suffix: '_HD_medium',
+            quality: 75
+          },{
+            width: 400,
+            suffix: '_small',
+            quality: 30
+          },{
+            width: 400,
+            suffix: '_HD_small',
+            quality: 75
           }]
         },
 
@@ -27,9 +47,9 @@ module.exports = function(grunt) {
         */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          src: ['*.{gif,jpg,png,webp}'],
+          cwd: 'blog/static/images_src/',
+          dest: 'blog/static/images/'
         }]
       }
     },
@@ -37,7 +57,7 @@ module.exports = function(grunt) {
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['images'],
+        src: ['blog/static/images'],
       },
     },
 
@@ -45,10 +65,23 @@ module.exports = function(grunt) {
     mkdir: {
       dev: {
         options: {
-          create: ['images']
+          create: ['blog/static/images']
         },
       },
     },
+    imagemin: {
+      dev: {
+        options: {
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ['*.{jpg,webp}'],
+          cwd: 'blog/static/images',
+          dest: 'blog/static/images'
+        }]
+      }
+    }
 
   });
 
@@ -56,6 +89,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-imagemin')
+  grunt.registerTask('img', ['clean', 'mkdir','responsive_images']);
+  grunt.registerTask('min', ['imagemin'])
 
 };
