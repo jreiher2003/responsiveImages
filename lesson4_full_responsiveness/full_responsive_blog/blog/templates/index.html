@@ -35,8 +35,14 @@
   <h1>My responsive blog</h1>
 
   <article>
-
-    <img src="./static/images/still_life-1600_large_2x.jpg" alt="">
+    
+    <!-- still life -->
+    <picture>
+      <source media="(min-width: 800px)" srcset="./static/images/still_life-1600_large.webp 1x, ./static/images/still_life-1600_HD_large.webp 2x">
+      <source media="(min-width: 500px)" srcset="./static/images/still_life-800_medium.webp 1x, ./static/images/still_life-800_HD_medium.webp 2x">
+      <source media="(min-width: 200px)" srcset="./static/images/still_life-400_small.webp 1x, ./static/images/still_life-400_HD_small.webp 2x">
+      <img src="./static/images/still_life-1600_large.jpg" srcset="./static/images/still_life-400_small.jpg 400w, ./static/images/still_life-800_medium.jpg 800w, ./static/images/still_life-1600_large.jpg 800w" alt="a still life photo of a desk and fruit">
+    </picture>
 
     <h2>My story</h2>
 
