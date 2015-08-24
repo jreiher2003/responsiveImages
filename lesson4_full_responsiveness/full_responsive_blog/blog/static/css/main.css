@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Cookie|Cutive+Mono);
+
 [class*="zocial-"]:before {
   color: black;
   display: inline-block;
@@ -25,7 +27,7 @@ article {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Cutive Mono', sans-serif;
   margin: 2em;
 }
 
@@ -34,8 +36,11 @@ div#social {
 }
 
 figcaption {
-  color: #bb021e;
-  padding: 1em 0;
+  text-align: center;
+  font-family: 'Cookie', cursive, sans-serif;
+  font-size: 1.5em;
+  color: #BF7D80;
+  padding: .5em 0 1em 0;
 }
 
 figure {
@@ -56,7 +61,12 @@ h1 {
   margin: 0 auto 1em auto;
   width: 800px;
 }
-
+h2 {
+  font-size: 2em;
+  padding: .5em 0 1em 0;
+  margin: 0;
+  text-align: left;
+}
 img {
   max-width: 100%;
 }
