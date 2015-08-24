@@ -19,7 +19,8 @@ div#social a {
 div#social a:last-of-type {
   margin: 0;
 }
-
+title {
+}
 article {
   margin: 0 auto;
   max-width: 50em;
@@ -58,6 +59,7 @@ header {
 }
 
 h1 {
+  text-transform: uppercase;
   margin: 0 auto 1em auto;
   width: 800px;
 }
